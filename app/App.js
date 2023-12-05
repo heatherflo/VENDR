@@ -1,5 +1,6 @@
 import { router } from './router-config.js';
 import { snack } from './models/Vendor.js';
+import { SnacksController } from './controllers/SnacksController.js';
 
 class App {
 
@@ -7,7 +8,7 @@ class App {
 
 
 
-
+  SnacksController = new SnacksController()
 
 
 
