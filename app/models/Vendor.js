@@ -13,7 +13,7 @@ export class snack {
   }
 
   get snackImage() {
-    return `<div class="col-3 border border-dark rounded ">${this.name} ${this.price}
+    return `<div onclick="app.SnacksController.buySnack('${this.name}')" class="col-3 border border-dark rounded ">${this.name} ${this.price}
   <button class="btn border-dark rounded">button
 
   </button>

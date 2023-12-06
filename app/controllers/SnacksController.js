@@ -29,4 +29,9 @@ export class SnacksController {
     console.log("snack appears")
   }
 
+  buySnack(snackName) {
+    snacksService.buySnack(snackName)
+    console.log('buy snack')
+  }
+
 }
