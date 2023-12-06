@@ -20,6 +20,7 @@ class SnacksService {
       window.alert("You don't have enough $")
     }
     console.log('is this working?')
+
   }
 
 }

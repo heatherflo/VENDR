@@ -32,6 +32,6 @@ export class SnacksController {
   buySnack(snackName) {
     snacksService.buySnack(snackName)
     console.log('buy snack')
-  }
 
+  }
 }
