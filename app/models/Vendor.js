@@ -20,4 +20,10 @@ export class snack {
 </div>
 </div>`
   }
+
+  get buySnack() {
+    return `<div class="row">
+    <button id="drawMoney" class="btn border border-dark" onclick="app.SnacksController.addMoney('${this.name})">('${this.price}</button>
+      </div>`
+  }
 }
