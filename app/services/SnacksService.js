@@ -8,6 +8,7 @@ class SnacksService {
     console.log('added money', AppState.money);
   }
   buySnack(snackName) {
+
     const snacks = AppState.snacks
     let money = AppState.money
     const snack = snacks.find(snack => snack.name == snackName)

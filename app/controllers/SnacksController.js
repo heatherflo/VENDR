@@ -7,6 +7,7 @@ export class SnacksController {
   constructor() {
     console.log('snacks are good')
     this.drawSnack()
+
   }
 
   addMoney() {
@@ -26,12 +27,14 @@ export class SnacksController {
     let content = ""
     snacks.forEach(snack => content += snack.snackImage)
     document.getElementById('snackImage').innerHTML = content
-    console.log("snack appears")
+    console.log("snack appears", snacks)
   }
 
   buySnack(snackName) {
     snacksService.buySnack(snackName)
     console.log('buy snack')
+    this.drawMoney()
+
 
   }
 }
