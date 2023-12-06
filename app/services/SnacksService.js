@@ -17,8 +17,10 @@ class SnacksService {
       console.log('[MONEY BEFORE]', money)
       money -= snack.price
       console.log('[MONEY AFTER]', money)
+      AppState.money = money
     } else {
       window.alert("You don't have enough $")
+
     }
     console.log('is this working?')
 

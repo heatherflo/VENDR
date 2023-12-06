@@ -18,7 +18,7 @@ export class SnacksController {
 
   drawMoney() {
     console.log('drawing money')
-    document.getElementById('drawMoney').innerText = AppState.money.toString()
+    document.getElementById('drawMoney').innerText = `$${AppState.money}`
 
   }
 
